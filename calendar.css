@@ -1,0 +1,11 @@
+body {
+  font-family: "Montserrat";  /* just a cutsom font */
+}
+
+a:-webkit-any-link{
+  text-decoration:none !important;    /* do not underline links */
+  color: black; !important;           /* give links a default color */
+}
+
+<span class="glyphicon glyphicon-chevron-left pull-left"></span>
+<span class="glyphicon glyphicon-chevron-right pull-right"></span>
