@@ -133,3 +133,9 @@ ul li a:hover {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+img {
+  height: 500px;
+  width:500px;
+}

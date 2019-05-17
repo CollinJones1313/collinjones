@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Collin Jones</title>
+
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+
+  <nav>
+
+    <ul>
+      <li><a href="index.html">About Me</a>
+      <li><a href="academics.html">Academics</a>
+      <li><a href="projects.html">Projects</a>
+      <li><a href="fastfood.html">Fast Food Research</a>
+    </ul>
+
+  </nav>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="./images/burgerking.jpg" style="width:100%">
+      <div class="text">Burger King: 10-Cent Nuggets</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="./images/hulk.jpg" style="width:100%">
+      <div class="text">Smoothie King: Strawberry Hulk Smoothie</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="./images/sonic.jpg" style="width:100%">
+      <div class="text">Sonic: Mozzerella Sticks</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="./images/wafflehouse.jpg" style="width:100%">
+      <div class="text">Waffle House: Patty Melt</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="./images/wendys.jpg" style="width:100%">
+      <div class="text">Wendy's: 4 for $4</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="./images/zax.jpg" style="width:100%">
+      <div class="text">Zaxby's: Nibblerz Meal</div>
+    </div>
+
+
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every x seconds
+    }
+  </script>
+
+
+</body>
+
+
+
+</html>
